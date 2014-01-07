@@ -3,10 +3,10 @@ Set 1
 1.The bug will move to a new location as long as the front is clear otherwise it tries to turn then move forward.
 2.The bug moves in the direction it is facing unless blocked then the bug turns right to see if it can move from there.
 3.If the bug does not move it turns right.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+4.When the bug moves it leaves a flower behind.
+5.When the bug is at the end of the grid it will turn until it can move and will do that until possible.
+6.When the bug has a rock immediately infront of it, the bug will turn right but diagonal.
+7.A flower stays in the stops behind the bug but at a point of flowers it becomes discolored.
+8.A flower can be put once but it will become discolored shortly after the bug moves about 5 spaces.
+9.The rock does not move but it blocks the bug's path.
+10.Only one actor is allowed in one grid at a time.
