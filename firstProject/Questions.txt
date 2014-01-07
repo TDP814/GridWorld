@@ -10,3 +10,19 @@ Set 1
 8.A flower can be put once but it will become discolored shortly after the bug moves about 5 spaces.
 9.The rock does not move but it blocks the bug's path.
 10.Only one actor is allowed in one grid at a time.
+
+Exercises:
+1. Degrees	Direction
+
+	0		North
+	45		North-East
+	90		East
+	135		South-East
+	180		South
+	225		South-West
+	270		West
+	315		North-West
+	360		North
+2.Using moveTo the directions you can move are anywhere in the grid by moving the bug to a set location. If you try to move the bug outside the grid an error occurs saying it is illegal.
+3.To change the color of a bug, a flower, and a rock I used void setColor.
+4.The bug disappears.
