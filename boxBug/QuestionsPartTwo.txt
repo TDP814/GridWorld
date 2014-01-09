@@ -1,0 +1,21 @@
+Questions for Part 2:
+Set 2
+
+1.What is the role of the instance variable sideLength?
+	The role of sideLength to define the side length of the box that is being created by the flowers.
+2.What is the role of th instnace variable steps?
+	Steps are to keep track of the steps taken to complete one side of the box.
+3.Why is the turn method called twice when steps become equal to sideLength?
+	The turn method only goes 45degrees and not 90degrees to make a complete turn so it calls it twice to turn when the side is complete.
+4.Why can the move method be called in the BoxBug class when there is no move mehtod in the BoxBug code?
+	The move method is extended to the BoxBug code.
+5.After a BoxBug is constructed, will the size of its square pattern always be the same? Why or why not?
+	No because the size of the square pattern is found in the BoxBugRunner so once BoxBug is complete the square size is used in BoxBug to make the square.
+6.Can the path a BoxBug travels ever change? Why or why not?
+	Yes it can change with a wall in the way of a rock that would cause the bug to turn and reset the box.
+7.When will the value of the steps be zero?
+	The values of the steps will be zero at the start of ever corner.
+
+Exercise questions:
+1.CircleBug has a different behavior than box bug by the taking off the corner of the square causing a circle to be created instead.
+2.
