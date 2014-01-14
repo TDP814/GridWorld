@@ -18,4 +18,4 @@ Set 2
 
 Exercise questions:
 1.CircleBug has a different behavior than box bug by the taking off the corner of the square causing a circle to be created instead.
-2.
+5.I added another bug to the world in the runner by using new type of bug to input into the world in an exact location.
