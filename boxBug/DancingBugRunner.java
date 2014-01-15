@@ -12,10 +12,11 @@ public class DancingBugRunner
 {
     public static void main(String[] args)
     {
-        Random object = new Random();
-        int[] random = new int[8];
-        for (int i=0; i<random.length; i++) {
-            random[i] = object.newInt(8);
+        Random r = new Random();
+        int arraylength = r.nextInt(25);
+        int[] turns = new int[arraylength];
+        for (int i = 0; i < arraylength; i++) {
+            turns[i] = r.nextInt(8) * 45;
         }
         ActorWorld world = new ActorWorld();
         //BoxBug alice = new BoxBug(6);
