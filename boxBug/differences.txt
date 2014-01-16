@@ -1,0 +1,9 @@
+Differences:
+ZBug:
+1. Uses getDirection
+2. Continues after one z
+3. Runner the same as BoxBug
+DancingBug:
+1. Uses a random
+2. The runner passes the random
+3. Acts like a bug
