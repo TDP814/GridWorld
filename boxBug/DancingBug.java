@@ -9,7 +9,7 @@ public class DancingBug extends Bug
      * Constructs a box bug that traces a square of a given side length
      * @param length the side length
      */
-    public DancingBug(int[] random)
+    public DancingBug(int[] r)
     {
         steps = 0;
         this.turns = turns;

@@ -24,7 +24,7 @@ public class DancingBugRunner
         //CircleBug bob = new CircleBug(1);
         //SpiralBug tom = new SpiralBug(1);
         //ZBug brad = new ZBug(5);
-        DancingBug s = new DancingBug(random);
+        DancingBug s = new DancingBug(r);
         //world.add(new Location(7, 8), alice);
         //world.add(new Location(5, 5), bob);
         //world.add(new Location(9, 9), tom);
