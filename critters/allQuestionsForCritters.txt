@@ -1,8 +1,8 @@
 Set 7
 
-1.
-2.
-3.
-4.
-5.
-6.
+1.act, selectMoveLocation, makeMove, and processActors
+2.selectMoveLocation, makeMove, processActors, moveLocation, and getActors.
+3.It depends on if the critter needs to get all the actors around it or in the different spots.
+4.A critter could use getNeighbors, to get the actors in all locations around it, or getOccupiedAdjacentLocations and then find the actors.
+5.Three mothods to move are : selectMoveLocation(), getMoveLocation(), and makeMove()
+6.Critters are constructed using the Actor constucter.
