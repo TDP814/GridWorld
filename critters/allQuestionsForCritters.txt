@@ -8,18 +8,73 @@ Set 7:
 6.Critters are constructed using the Actor constucter.
 
 Set 8:
-1.The act caused the CharmeleanCritter to act different without overrideing is due to the 
-2.
-3.
-4.
-5.
-6.
+1.The act caused the CharmeleanCritter to act different without overrideing is due to the processActors getting overrided.
+2.1st changes the direction then uses super.makeMove to move to the new location like a critter.
+3.Modify the makeMove method to drop flowers in the old location. A variable is needed to keep track of the ChameleonCritter’s current location. After the critter moves, put a flower in its old location only if the critter actually moved to a new location.
+4.Because it processes the same list of actors that its base class Critter does. Since ChameleonCritter does not define a new behavior for getActors, it does not need to override this method. 
+5.The Actor class contains the getLocation method. All Actor subclasses inherit this method. 
+6.A critter can access its grid by calling the getGrid method that it inherits from the Actor class. 
 
 Set 9:
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1.A CrabCritter processes its actors by eating all of the neighbors returned when getActors is called. This is the same behavior that it inherits from its base class Critter. There is no need to override this method. 
+2. The CrabCritter’s getActors method only looks for neighbors that are immediately in front of the crabcritter and to its right-front and left-front locations. Any neighbors found in these locations will be “eaten” when the processActors method is called. Actors in the other neighboring locations will not be disturbed. 
+3.The parameter for this method brings in an array of directions. For the crab critter, this array contains the directions of
+the possible neighbors that this crab can eat. The method getLocationsInDirections uses this array to determine and return valid adjacent locations of this critter in the directions given by the array parameter. 
+4.(4,3), (4,4), and (4,5) 
+5.Similarities: When critters and crab critters move, they do not turn in the direction that they are moving. They both randomly choose their next location from their list of possible move locations.
+Differences: A crab critter will only move to its left or its right. A critter’s possible move locations are any of its eight adjacent neighboring locations. When a crab critter cannot move, it will randomly turn right or left. When a crittercannot move, it does not turn. 
+6.If the parameter loc in makeMove is equal to the crab critter’s current location, it turns instead of moving. 
+7.A crab critter inherits the processActors method from the Critter class. This method only removes actors that are not rocks and not critters. Since a CrabCritter is a Critter, a crab critter will not eat any other critter. 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+Set 7:
+1.The methods implemented in critter are: act, selectMoveLocation, makeMove, and processActors
+2.selectMoveLocation, makeMove, processActors, moveLocation, and getActors.
+3.It depends on if the critter needs to get all the actors around it or in the different spots.
+4.A critter could use getNeighbors, to get the actors in all locations around it, or getOccupiedAdjacentLocations and then find the actors.
+5.Three mothods to move are : selectMoveLocation(), getMoveLocation(), and makeMove()
+6.Critters are constructed using the Actor constucter.
+Set 8:
+1.The act caused the CharmeleanCritter to act different without overrideing is due to the processActors getting overrided.
+2.1st changes the direction then uses super.makeMove to move to the new location like a critter.
+3.Modify the makeMove method to drop flowers in the old location. A variable is needed to keep track of the ChameleonCritter’s current location. After the critter moves, put a flower in its old location only if the critter actually moved to a new location.
+4.Because it processes the same list of actors that its base class Critter does. Since ChameleonCritter does not define a new behavior for getActors, it does not need to override this method. 
+5.The Actor class contains the getLocation method. All Actor subclasses inherit this method. 
+6.A critter can access its grid by calling the getGrid method that it inherits from the Actor class. 
+Set 9:
+1.A CrabCritter processes its actors by eating all of the neighbors returned when getActors is called. This is the same behavior that it inherits from its base class Critter. There is no need to override this method. 
+2. The CrabCritter’s getActors method only looks for neighbors that are immediately in front of the crabcritter and to its right-front and left-front locations. Any neighbors found in these locations will be “eaten” when the processActors method is called. Actors in the other neighboring locations will not be disturbed. 
+3.The parameter for this method brings in an array of directions. For the crab critter, this array contains the directions of
+the possible neighbors that this crab can eat. The method getLocationsInDirections uses this array to determine and return valid adjacent locations of this critter in the directions given by the array parameter. 
+4.(4,3), (4,4), and (4,5) 
+5.Similarities: When critters and crab critters move, they do not turn in the direction that they are moving. They both randomly choose their next location from their list of possible move locations.
+Differences: A crab critter will only move to its left or its right. A critter’s possible move locations are any of its eight adjacent neighboring locations. When a crab critter cannot move, it will randomly turn right or left. When a crittercannot move, it does not turn. 
+6.If the parameter loc in makeMove is equal to the crab critter’s current location, it turns instead of moving. 
+7.A crab critter inherits the processActors method from the Critter class. This method only removes actors that are not rocks and not critters. Since a CrabCritter is a Critter, a crab critter will not eat any other critter. 
+Commit summary:
