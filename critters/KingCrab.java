@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class KingCrab extends CrabCritter{
     public KingCrab(){
-        setColor(Color.PINK);
+        setColor(Color.YELLOW);
     }
     public int distanceFrom(Location loc1, Location loc2){
         int x1 = loc1.getRow();
