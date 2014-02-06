@@ -20,7 +20,7 @@ public class KingCrab extends CrabCritter{
     }
     private boolean moveOneMoreAway(Actor a){
         ArrayList<Location> locs = getGrid().getEmptyAdjacentLocations(a.getLocation());
-        for (Location loc: loc) {
+        for (Location loc: locs) {
             if (distanceFrom(getLocation(), loc) > 1) {
                 a.moveTo(loc);
                 return true;
