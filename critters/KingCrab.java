@@ -11,10 +11,22 @@ public class KingCrab extends CrabCritter{
         setColor(Color.PINK);
     }
     public int distanceFrom(Location loc1, Location loc2){
-
+        int x1 = loc1.getRow();
+        int y1 = loc1.getCol();
+        int x2 = loc2.getRow();
+        int y2 = loc2.getCol();
+        double dist = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2) + .5);
+        return (int)Math.floor(dist);
     }
     private boolean moveOneMoreAway(Actor a){
-
+        ArrayList<Location> locs = getGrid().getEmptyAdjacentLocations(a.getLocation());
+        for (Location loc: loc) {
+            if (distanceFrom(getLocation(), loc) > 1) {
+                a.moveTo(loc);
+                return true;
+            }
+        }
+        return false;
     }
     public void processActors(ArrayList<Actor> actors){
         for (Actor a: actors) {
