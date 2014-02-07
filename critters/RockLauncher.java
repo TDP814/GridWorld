@@ -14,7 +14,7 @@ public class RockLauncher extends Critter{
     public void processActors(ArrayList<Actor> actors){
         ArrayList<Actor> al= new ArrayList<Actor>();
         for (Actor a: actors) {
-            if (a instanceof Rock) {
+            if (a instanceof Rock && target.getGrid()!= null) {
                Location temp = this.target.getLocation();
                this.target.removeSelfFromGrid();
                a.moveTo(temp);
