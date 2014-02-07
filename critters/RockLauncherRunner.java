@@ -21,11 +21,13 @@ public class RockLauncherRunner
         world.add(new Location(2, 2), new Flower());
         world.add(new Location(3, 5), new Flower());
         world.add(new Location(3, 8), new Flower());
-        world.add(new Location(6, 5), new Bug());
-        world.add(new Location(5, 3), new Bug());
-        world.add(new Location(4, 5), new RockLauncher());
-        world.add(new Location(6, 1), new RockLauncher());
-        world.add(new Location(7, 4), new RockLauncher());
+        Bug bug1 = new Bug(Color.RED);
+        Bug bug2 = new Bug(Color.RED);
+        world.add(new Location(1,1),bug1);
+        world.add(new Location(7,7),bug2);
+        world.add(new Location(4, 5), new RockLauncher(bug1));
+        world.add(new Location(6, 1), new RockLauncher(bug2));
+        
         world.show();
     }
 }
