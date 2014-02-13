@@ -1,17 +1,17 @@
 Part 3 Questions:
 Set 3:
-1.
-2.
-3.
-4.
-5.
+1.Loc1.getRow();
+2.false
+3.(4,4)
+4.135
+5.From the directions integer
 Set 4:
-1.
-2.
-3.
-4.
+1.gr is a Grid object gr.getNumRows()*gr.getNumCols() - gr.OccupiedLocations().size()
+2.gr.isValid(new Location(10,10))
+3.The grid is an interface. The BoundedGrid and UnboundedGrids extend to the AbractGrid class.
+4.No because an array is unable to change its size where adding actors and deleting them would cause errors.
 Set 5:
-1.
+1. An actor has a color, direction, and location. to its reference in on the grid.
 2.
 3.
 4.
