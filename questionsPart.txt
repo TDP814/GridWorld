@@ -12,19 +12,19 @@ Set 4:
 4.No because an array is unable to change its size where adding actors and deleting them would cause errors.
 Set 5:
 1. An actor has a color, direction, and location. to its reference in on the grid.
-2.
-3.
-4.
-5.
+2. Blue and Location.NORTH
+3. Actors could be created
+4.No, it throws an exception saying it is already in the grid, same with removing itself, but it can remove and then put itself back into the grid
+5.setDirection(getDirection() + Location.Right);
 Set 6:
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
+1.if (!gr.isValid(next)) return false;
+2. return (neighbor == null) || (neighbor instanceof Flower);
+3. The isValid() and get() methods, to test if the location is on the grid and to find out it any and what actor is on in that location
+4.The getAdjacentLocation(getDirection()) method, to find the location that is next to the bug in that direction
+5.getDirection() to find the location in the direction the bug is facing 
+6. It removes the bug from the grid
+7.Yes, because it holds the original location, which is where the flower is to be added.
+8.new Flower(getColor());
+9.Yes
+10. flower.putSelfInGrid(gr, loc);
+11.4 times
